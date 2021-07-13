@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="15.828">
+    <testcase classname="Acceptance testing to validate Search cars page is working fine." name="Validate egg timer functionality" time="15.302">
+        <failure message="expected:&lt;e.ggtimer - [a ]simple countdown tim...&gt; but was:&lt;e.ggtimer - []simple countdown tim...&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given user is on the Home Page "https://e.ggtimer.com/" of eggtimer website.passed
+And the page title should be "e.ggtimer - simple countdown timer"...........failed
+And user enter timer on timer box...........................................skipped
+Then click on "start" link..................................................skipped
+Then timer starts on decreasing order.......................................skipped
+And after that time expired pop up displayed................................skipped
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<e.ggtimer - [a ]simple countdown tim...> but was:<e.ggtimer - []simple countdown tim...>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at steps.EggTimerSteps.the_page_title_should_be(EggTimerSteps.java:52)
+	at ✽.the page title should be "e.ggtimer - simple countdown timer"(file:///C:/Users/priya%20pandey/eclipse-workspace/MaerskCucumberPageObjects2/src/test/resources/Features/EggTimerStart.feature:8)
+]]></failure>
+    </testcase>
+</testsuite>

@@ -1,0 +1,123 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-13T09:55:38.029Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9696660100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.EggTimerSteps.setUp()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Validate egg timer functionality",
+        "description": "",
+        "id": "acceptance-testing-to-validate-search-cars-page-is-working-fine.;validate-egg-timer-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5391615400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is on the Home Page \"https://e.ggtimer.com/\" of eggtimer website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://e.ggtimer.com/\"",
+                  "offset": 25
+                }
+              ],
+              "location": "steps.EggTimerSteps.user_is_on_the_home_page_of_eggtimer_website(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003ce.ggtimer - [a ]simple countdown tim...\u003e but was:\u003ce.ggtimer - []simple countdown tim...\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat steps.EggTimerSteps.the_page_title_should_be(EggTimerSteps.java:52)\r\n\tat ✽.the page title should be \"e.ggtimer - simple countdown timer\"(file:///C:/Users/priya%20pandey/eclipse-workspace/MaerskCucumberPageObjects2/src/test/resources/Features/EggTimerStart.feature:8)\r\n",
+              "duration": 12164200,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "the page title should be \"e.ggtimer - simple countdown timer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"e.ggtimer - simple countdown timer\"",
+                  "offset": 25
+                }
+              ],
+              "location": "steps.EggTimerSteps.the_page_title_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user enter timer on timer box",
+            "match": {
+              "location": "steps.EggTimerSteps.user_enter_timer_on_timer_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "click on \"start\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"start\"",
+                  "offset": 9
+                }
+              ],
+              "location": "steps.EggTimerSteps.click_on_link(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 998300,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "timer starts on decreasing order",
+            "match": {
+              "location": "steps.EggTimerSteps.timer_starts_on_decreasing_order()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "after that time expired pop up displayed",
+            "match": {
+              "location": "steps.EggTimerSteps.after_that_time_expired_pop_up_displayed()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Acceptance testing to validate Search cars page is working fine.",
+    "description": "  In order to validate that\n  the search cars page is working fine\n  we will do the acceptance testing",
+    "id": "acceptance-testing-to-validate-search-cars-page-is-working-fine.",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/EggTimerStart.feature",
+    "tags": []
+  }
+]
