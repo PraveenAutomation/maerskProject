@@ -34,25 +34,5 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/priya pandey/.m2/repository/org/codehaus/groovy/groovy/3.0.3/groovy-3.0.3.jar" sourcepath="C:/Users/priya pandey/.m2/repository/org/codehaus/groovy/groovy/3.0.3/groovy-3.0.3-sources.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="test" value="true"/>
-			<attribute name="maven.groupId" value="org.codehaus.groovy"/>
-			<attribute name="maven.artifactId" value="groovy"/>
-			<attribute name="maven.version" value="3.0.3"/>
-			<attribute name="maven.scope" value="test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/priya pandey/.m2/repository/org/codehaus/groovy/groovy/3.0.6/groovy-3.0.6.jar" sourcepath="C:/Users/priya pandey/.m2/repository/org/codehaus/groovy/groovy/3.0.6/groovy-3.0.6-sources.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="test" value="true"/>
-			<attribute name="maven.groupId" value="org.codehaus.groovy"/>
-			<attribute name="maven.artifactId" value="groovy"/>
-			<attribute name="maven.version" value="3.0.6"/>
-			<attribute name="maven.scope" value="test"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

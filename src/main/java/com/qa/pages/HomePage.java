@@ -60,5 +60,24 @@ public class HomePage extends TestBase{
 			return expired_Message.getText();
 			
 		}
+		
+		//Validate Decreasing order of Timer
+		public void validateTimer()
+		{
+	        String beforeXpath="//span[normalize-space()='";
+			String afterXpath="seconds']\"";
+			
+			for(int i=25;i<=0;i--)
+			{
+				String actul_xpath=beforeXpath+i+afterXpath;
+				WebElement element= driver.findElement(By.xpath(actul_xpath));
+				System.out.println(element.getText());
+				if(element.getText().equals("18"))
+				{
+					System.out.println("Timer "+element.getText());
+					break;
+				}
+			}
+		}
 
 }

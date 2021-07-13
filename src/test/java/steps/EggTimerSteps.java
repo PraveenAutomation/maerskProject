@@ -62,7 +62,7 @@ public class EggTimerSteps extends TestBase  {
 
 	@Then("timer starts on decreasing order")
 	public void timer_starts_on_decreasing_order() {
-	   
+		homePage.validateTimer();
 	}
 
 	@Then("after that {string} message should be displayed")

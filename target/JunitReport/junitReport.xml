@@ -1,19 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="15.828">
-    <testcase classname="Acceptance testing to validate Search cars page is working fine." name="Validate egg timer functionality" time="15.302">
-        <failure message="expected:&lt;e.ggtimer - [a ]simple countdown tim...&gt; but was:&lt;e.ggtimer - []simple countdown tim...&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given user is on the Home Page "https://e.ggtimer.com/" of eggtimer website.passed
-And the page title should be "e.ggtimer - simple countdown timer"...........failed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="16.127">
+    <testcase classname="Acceptance testing to validate Search cars page is working fine." name="Validate egg timer functionality" time="15.926">
+        <failure message="timeout: Timed out receiving message from renderer: 1.637&#10;  (Session info: chrome=91.0.4472.124)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-EBFLCFN', ip: '192.168.0.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\PRIYAP~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60338}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 07a7804e0c786cba173fce7a0b0efa85" type="org.openqa.selenium.TimeoutException"><![CDATA[Given user is on the Home Page "https://e.ggtimer.com/" of eggtimer website.failed
+And the page title should be "e.ggtimer - a simple countdown timer".........skipped
 And user enter timer on timer box...........................................skipped
 Then click on "start" link..................................................skipped
 Then timer starts on decreasing order.......................................skipped
-And after that time expired pop up displayed................................skipped
+And after that "Time Expired!" message should be displayed..................skipped
 
 StackTrace:
-org.junit.ComparisonFailure: expected:<e.ggtimer - [a ]simple countdown tim...> but was:<e.ggtimer - []simple countdown tim...>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at steps.EggTimerSteps.the_page_title_should_be(EggTimerSteps.java:52)
-	at ✽.the page title should be "e.ggtimer - simple countdown timer"(file:///C:/Users/priya%20pandey/eclipse-workspace/MaerskCucumberPageObjects2/src/test/resources/Features/EggTimerStart.feature:8)
+org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 1.637
+  (Session info: chrome=91.0.4472.124)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-EBFLCFN', ip: '192.168.0.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\PRIYAP~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60338}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 07a7804e0c786cba173fce7a0b0efa85
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at steps.EggTimerSteps.user_is_on_the_home_page_of_eggtimer_website(EggTimerSteps.java:43)
+	at ✽.user is on the Home Page "https://e.ggtimer.com/" of eggtimer website(file:///C:/Users/priya%20pandey/eclipse-workspace/MaerskCucumberPageObjects/src/test/resources/Features/EggTimerStart.feature:7)
 ]]></failure>
     </testcase>
 </testsuite>
