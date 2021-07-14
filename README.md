@@ -28,4 +28,5 @@
 
 ## Issue at application level:
 ===============================
-- Issue at alert, it is kind of static alert.
+- Related to alert of application(seems static alert).
+- 2 second lapse of time while restarting the timer from "Restart Timer" option.
