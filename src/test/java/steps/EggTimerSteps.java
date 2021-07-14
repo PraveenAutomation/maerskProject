@@ -68,6 +68,7 @@ public class EggTimerSteps extends TestBase  {
 	@Then("after that {string} message should be displayed")
 	public void after_that_message_should_be_displayed(String expected_message) {
 		//String actual_message = driver.findElement(By.xpath("//span[normalize-space()='Time Expired!']")).getText();
+		
 		String actual_message = homePage.expiredMessage();
 		Assert.assertEquals(actual_message, expected_message);
 	}
