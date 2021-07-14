@@ -16,6 +16,16 @@
 
 ## Framework Structure Details:
 ===============================
-- Used POM pattern with BDD Cucumber 
+- Used POM pattern with Cucumber(BDD) 
+- Consist of Feature & Step Definition files.
 - Created Packages for different levels like On Page Level,Utility Level,Resource Level & Test Level.
-- 
+- On Page Level, categorized on three section:
+  --> Object Repository(OR)
+  --> Initilization of OR
+  --> Actions Methods
+- TestRunner class used to run the test cases
+- Report section is maintained in TestRunner file.
+
+## Issue at application level:
+===============================
+- Issue at alert, it is kind of static alert.
